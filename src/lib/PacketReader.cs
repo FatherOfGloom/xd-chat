@@ -1,5 +1,3 @@
-using System.Text;
-
 namespace XDChatLib;
 
 public class PacketReader : BinaryReader

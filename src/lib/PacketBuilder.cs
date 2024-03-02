@@ -7,7 +7,7 @@ public class PacketBuilder
     public void WriteMessage(string message)
     {
         _memoryStream.Write(BitConverter.GetBytes(message.Length));
-        _memoryStream.Write(System.Text.Encoding.ASCII.GetBytes(message));
+        _memoryStream.Write(Encoding.ASCII.GetBytes(message));
     }
 
     public byte[] PacketBytes => _memoryStream.ToArray();
